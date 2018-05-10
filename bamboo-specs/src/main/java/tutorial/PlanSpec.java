@@ -33,7 +33,7 @@ public class PlanSpec {
                     .jobs(new Job("Default Job",
                             new BambooKey("JOB1"))
                             .tasks(new ScriptTask()
-                                    .inlineBody("echo \"from gitlab.....\""))))
+                                    .inlineBody("echo \"from github\""))))
             .triggers(new RepositoryPollingTrigger())
             .planBranchManagement(new PlanBranchManagement()
                     .delete(new BranchCleanup())
